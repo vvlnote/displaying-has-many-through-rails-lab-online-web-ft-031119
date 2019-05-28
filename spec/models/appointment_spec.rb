@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+require 'date'
 describe 'Appointment' do
 
   before do
