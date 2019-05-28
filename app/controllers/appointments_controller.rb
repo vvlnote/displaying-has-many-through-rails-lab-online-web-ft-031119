@@ -1,4 +1,4 @@
-require 'date'
+
 class AppointmentsController < ApplicationController
 
   def show
