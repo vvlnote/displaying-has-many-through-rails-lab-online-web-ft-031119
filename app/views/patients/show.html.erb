@@ -1,5 +1,9 @@
+
+<h2><%= @patient.name %>
+<h3> Appointments : </h3>
 <ul>
-<% @patients.each do |p| %>
-  <li>Name: <%=p.name%> Number of Appointments: <%=a.appointments.size %></li>
-<%end%>
+  <% @patient.appointments.each do |a| %>
+    <%date = DateTime.parse(a.appointment_datetime)%>
+    <li><%=date.strftime("%B %d, %Y at %H:%M") %></li>
+  <%end%>
 </ul>
